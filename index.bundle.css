@@ -11,7 +11,7 @@
   clear: both;
 }
 
-.infospan101,.infospan101 .infospan101_icon,.infospan101 .infospan101_icon svg {
+.infospan101,.infospan101 .infospan101_icon,.infospan101 .infospan101_icon svg,.infospan102,.infospan102 .infospan102_icon,.infospan102 .infospan102_icon svg {
   display: inline-block;
 }
 
@@ -24,7 +24,7 @@ html,body,div,span,h1,h2,h3,h4,h5,h6,p,a,s,[type="reset"],[type="submit"] {
   padding: 0;
 }
 
-.infospan101 {
+.infospan101,.infospan102 {
   padding: 4px;
 }
 
@@ -284,6 +284,53 @@ body {
 
   .infospan101 p:not(:first-of-type) {
     margin-left: 6px;
+  }
+}
+
+.infospan102 {
+  font-size: 14px;
+  font-size: 0.875rem;
+  background-color: #eee;
+}
+
+.infospan102 a:hover {
+  text-decoration: none;
+}
+
+.infospan102 .infospan102_icon {
+  margin-right: 2px;
+}
+
+.infospan102 .infospan102_icon svg {
+  vertical-align: text-bottom;
+  width: 18px;
+  height: 18px;
+}
+
+.infospan102 .infospan102_separator {
+  margin: 0 6px 0 6px;
+  /* trbl */
+  width: 1px;
+  background-color: #c0c0c0;
+}
+
+@media (min-width: 20em) {
+  .infospan102 .infospan102_separator {
+    display: none;
+  }
+
+  .infospan102 p {
+    display: block;
+  }
+}
+
+@media (min-width: 30em) {
+  .infospan102 .infospan102_separator {
+    display: inline-block;
+  }
+
+  .infospan102 p {
+    display: inline-block;
   }
 }
 
