@@ -1,0 +1,45 @@
+.infospan101 {
+  @extend %display--inline-block;
+  @extend %padd--4;
+  @include font-size(14px);
+  background-color: #eee;
+
+  a {
+    &:hover {
+      text-decoration: none;  
+    }
+  }
+
+  .infospan101_icon {
+    @extend %display--inline-block;
+    margin-right: 2px;
+    svg {
+      @extend %display--inline-block;
+      vertical-align: text-bottom;
+      width: 18px;
+      height: 18px;
+    }
+  }  
+}
+
+// mobile portrait (320x480) 
+@include mq($from: mobile) {
+  .infospan101 {
+    p {
+      display: block;
+    }
+  }
+}
+
+// *mobile landscape (480x320)
+@include mq($from: mobileLandscape) {
+  .infospan101 {
+    p {
+      display: inline-block;
+
+      &:not(:first-of-type) {
+        margin-left: 6px;
+      }
+    }
+  }
+}
