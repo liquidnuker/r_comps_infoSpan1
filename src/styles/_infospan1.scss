@@ -1,11 +1,30 @@
 // infospan101
 // ==================================================/
+@mixin infospan101_theme() {
+  .infospan101 {
+    background-color: #1c1d22;
+    border: 1px solid #2a2a2d;
+    color: #d5d5d5;
+
+    a,
+    date {
+      color: #fff;
+    }
+
+    .infospan101_icon {
+      svg {
+        fill: #d5d5d5;
+      }
+    }
+  }
+}
+@include infospan101_theme();
+
 .infospan101 {
   @extend %display--inline-block;
   @extend %padd--4;
   @include font-size(14px);
-  background-color: #eee;
-
+  
   a {
     &:hover {
       text-decoration: none;  
@@ -48,12 +67,34 @@
 
 // infospan102
 // ==================================================/
+@mixin infospan102_theme() {
+  .infospan102 {
+    background-color: #eee;
+    color: #2c2d32;
+
+    a,
+    date {
+      color: #000;
+    }
+
+    .infospan102_icon {
+      svg {
+        fill: #2c2d32;
+      }
+    }
+
+    .infospan102_separator {
+      background-color: #c0c0c0;
+    }  
+  }
+}
+@include infospan102_theme();
+
 .infospan102 {
   @extend %display--inline-block;
   @extend %padd--4;
   @include font-size(14px);
-  background-color: #eee;
-
+  
   a {
     &:hover {
       text-decoration: none;  
@@ -74,7 +115,6 @@
   .infospan102_separator {
     margin: 0 6px 0 6px; /* trbl */
     width: 1px;
-    background-color: #c0c0c0;
   }  
 }
 
@@ -107,11 +147,41 @@
 
 // infospan103
 // ==================================================/
+@mixin infospan103_theme() {
+  .infospan103 {
+    background-color: #f5f3da;
+    color: #3b443f;
+
+    .infospan103_icon {
+      svg {
+        fill: #3b443f;
+      }
+    }
+
+    a,
+    date {
+      color: #c32349;
+    }
+
+    .infospan103_commentbadge {
+      background-color: #c32349;
+      a {
+        color: #fff;
+      }
+    }
+
+    .infospan103_separator {
+      background-color: #c0c0c0;
+    }  
+  }
+}
+@include infospan103_theme();
+
 .infospan103 {
   @extend %display--inline-block;
   @extend %padd--4;
   @include font-size(14px);
-  background-color: #eee;
+  
 
   a {
     &:hover {
@@ -133,17 +203,12 @@
   .infospan103_separator {
     margin: 0 6px 0 6px; /* trbl */
     width: 1px;
-    background-color: #c0c0c0;
   }  
 
   .infospan103_commentbadge {
     @extend %display--inline-block;
     @extend %br--4;
     padding: 2px 4px 2px 4px; /* trbl */
-    background-color: #000;
-    a {
-      color: #fff;
-    }
   }
 }
 

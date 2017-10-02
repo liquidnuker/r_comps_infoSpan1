@@ -256,9 +256,22 @@ body {
 }
 
 .infospan101 {
+  background-color: #1c1d22;
+  border: 1px solid #2a2a2d;
+  color: #d5d5d5;
+}
+
+.infospan101 a,.infospan101 date {
+  color: #fff;
+}
+
+.infospan101 .infospan101_icon svg {
+  fill: #d5d5d5;
+}
+
+.infospan101 {
   font-size: 14px;
   font-size: 0.875rem;
-  background-color: #eee;
 }
 
 .infospan101 a:hover {
@@ -292,9 +305,25 @@ body {
 }
 
 .infospan102 {
+  background-color: #eee;
+  color: #2c2d32;
+}
+
+.infospan102 a,.infospan102 date {
+  color: #000;
+}
+
+.infospan102 .infospan102_icon svg {
+  fill: #2c2d32;
+}
+
+.infospan102 .infospan102_separator {
+  background-color: #c0c0c0;
+}
+
+.infospan102 {
   font-size: 14px;
   font-size: 0.875rem;
-  background-color: #eee;
 }
 
 .infospan102 a:hover {
@@ -315,7 +344,6 @@ body {
   margin: 0 6px 0 6px;
   /* trbl */
   width: 1px;
-  background-color: #c0c0c0;
 }
 
 @media (min-width: 20em) {
@@ -339,9 +367,33 @@ body {
 }
 
 .infospan103 {
+  background-color: #f5f3da;
+  color: #3b443f;
+}
+
+.infospan103 .infospan103_icon svg {
+  fill: #3b443f;
+}
+
+.infospan103 a,.infospan103 date {
+  color: #c32349;
+}
+
+.infospan103 .infospan103_commentbadge {
+  background-color: #c32349;
+}
+
+.infospan103 .infospan103_commentbadge a {
+  color: #fff;
+}
+
+.infospan103 .infospan103_separator {
+  background-color: #c0c0c0;
+}
+
+.infospan103 {
   font-size: 14px;
   font-size: 0.875rem;
-  background-color: #eee;
 }
 
 .infospan103 a:hover {
@@ -362,17 +414,11 @@ body {
   margin: 0 6px 0 6px;
   /* trbl */
   width: 1px;
-  background-color: #c0c0c0;
 }
 
 .infospan103 .infospan103_commentbadge {
   padding: 2px 4px 2px 4px;
   /* trbl */
-  background-color: #000;
-}
-
-.infospan103 .infospan103_commentbadge a {
-  color: #fff;
 }
 
 @media (min-width: 20em) {
