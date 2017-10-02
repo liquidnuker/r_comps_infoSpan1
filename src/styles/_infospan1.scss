@@ -104,3 +104,72 @@
     }
   }
 }
+
+// infospan103
+// ==================================================/
+.infospan103 {
+  @extend %display--inline-block;
+  @extend %padd--4;
+  @include font-size(14px);
+  background-color: #eee;
+
+  a {
+    &:hover {
+      text-decoration: none;  
+    }
+  }
+
+  .infospan103_icon {
+    @extend %display--inline-block;
+    margin-right: 2px;
+    svg {
+      @extend %display--inline-block;
+      vertical-align: text-bottom;
+      width: 18px;
+      height: 18px;
+    }
+  }
+
+  .infospan103_separator {
+    margin: 0 6px 0 6px; /* trbl */
+    width: 1px;
+    background-color: #c0c0c0;
+  }  
+
+  .infospan103_commentbadge {
+    @extend %display--inline-block;
+    @extend %br--4;
+    padding: 2px 4px 2px 4px; /* trbl */
+    background-color: #000;
+    a {
+      color: #fff;
+    }
+  }
+}
+
+// mobile portrait (320x480) 
+@include mq($from: mobile) {
+  .infospan103 {
+    .infospan103_separator {
+      display: none;
+    }
+
+    p {
+      display: block;
+    }
+  }
+}
+
+// *mobile landscape (480x320)
+@include mq($from: mobileLandscape) {
+  .infospan103 {
+    .infospan103_separator {
+      display: inline-block;
+    }
+
+    p {
+      display: inline-block;
+
+    }
+  }
+}
