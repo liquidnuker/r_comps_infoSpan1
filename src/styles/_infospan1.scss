@@ -20,6 +20,29 @@
 }
 @include infospan101_theme();
 
+// mobile portrait (320x480) 
+@include mq($from: mobile) {
+  .infospan101 {
+    p {
+      display: block;
+    }
+  }
+}
+
+// *mobile landscape (480x320)
+@include mq($from: mobileLandscape) {
+  .infospan101 {
+    p {
+      display: inline-block;
+
+      &:not(:first-of-type) {
+        margin-left: 6px;
+      }
+    }
+  }
+}
+// end breakpoints
+
 .infospan101 {
   @extend %display--inline-block;
   @extend %padd--4;
@@ -41,28 +64,6 @@
       height: 18px;
     }
   }  
-}
-
-// mobile portrait (320x480) 
-@include mq($from: mobile) {
-  .infospan101 {
-    p {
-      display: block;
-    }
-  }
-}
-
-// *mobile landscape (480x320)
-@include mq($from: mobileLandscape) {
-  .infospan101 {
-    p {
-      display: inline-block;
-
-      &:not(:first-of-type) {
-        margin-left: 6px;
-      }
-    }
-  }
 }
 
 // infospan102
@@ -90,6 +91,34 @@
 }
 @include infospan102_theme();
 
+// mobile portrait (320x480) 
+@include mq($from: mobile) {
+  .infospan102 {
+    .infospan102_separator {
+      display: none;
+    }
+
+    p {
+      display: block;
+    }
+  }
+}
+
+// *mobile landscape (480x320)
+@include mq($from: mobileLandscape) {
+  .infospan102 {
+    .infospan102_separator {
+      display: inline-block;
+    }
+
+    p {
+      display: inline-block;
+
+    }
+  }
+}
+// end breakpoints
+
 .infospan102 {
   @extend %display--inline-block;
   @extend %padd--4;
@@ -116,33 +145,6 @@
     margin: 0 6px 0 6px; /* trbl */
     width: 1px;
   }  
-}
-
-// mobile portrait (320x480) 
-@include mq($from: mobile) {
-  .infospan102 {
-    .infospan102_separator {
-      display: none;
-    }
-
-    p {
-      display: block;
-    }
-  }
-}
-
-// *mobile landscape (480x320)
-@include mq($from: mobileLandscape) {
-  .infospan102 {
-    .infospan102_separator {
-      display: inline-block;
-    }
-
-    p {
-      display: inline-block;
-
-    }
-  }
 }
 
 // infospan103
@@ -177,6 +179,34 @@
 }
 @include infospan103_theme();
 
+// mobile portrait (320x480) 
+@include mq($from: mobile) {
+  .infospan103 {
+    .infospan103_separator {
+      display: none;
+    }
+
+    p {
+      display: block;
+    }
+  }
+}
+
+// *mobile landscape (480x320)
+@include mq($from: mobileLandscape) {
+  .infospan103 {
+    .infospan103_separator {
+      display: inline-block;
+    }
+
+    p {
+      display: inline-block;
+
+    }
+  }
+}
+// end breakpoints
+
 .infospan103 {
   @extend %display--inline-block;
   @extend %padd--4;
@@ -209,32 +239,5 @@
     @extend %display--inline-block;
     @extend %br--4;
     padding: 2px 4px 2px 4px; /* trbl */
-  }
-}
-
-// mobile portrait (320x480) 
-@include mq($from: mobile) {
-  .infospan103 {
-    .infospan103_separator {
-      display: none;
-    }
-
-    p {
-      display: block;
-    }
-  }
-}
-
-// *mobile landscape (480x320)
-@include mq($from: mobileLandscape) {
-  .infospan103 {
-    .infospan103_separator {
-      display: inline-block;
-    }
-
-    p {
-      display: inline-block;
-
-    }
   }
 }
